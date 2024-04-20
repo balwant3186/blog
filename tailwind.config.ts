@@ -7,7 +7,11 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        post: "repeat(auto-fill, minmax(20rem, 1fr))",
+      },
+    },
   },
   plugins: [],
 };
